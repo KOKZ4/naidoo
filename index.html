@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Online</title>
+    <link href="CSS/Style.css" rel="stylesheet" type="text/css">
+    
+</head>
+    
+<body>
+ <header>
+  <div class="sale">
+    <div class="sale-text">get your discount of up to 50% off any item!!! deal valid untill aprill 2023&nbsp;&nbsp;&nbsp; </div>
+    <div class="sale-text">get your discount of up to 50% off any item!!! deal valid untill aprill 2023&nbsp;&nbsp;&nbsp; </div>
+  </div>
+    <div class="header-hero">
+        <div class='menu'>
+            <div class='date'>Menu</div>
+            <div class="centre-logo"></div>
+            <div class= 'links'>
+                <div class='links'>search</div>
+                <div class='login'>cart</div>
+            </div>
+        </div>
+    </div>
+  </header>  
+    <script>
+    const header = document.querySelector('header');
+    const sectionOne = document.querySelector('.sale');
+
+    const sectionOneOptions = {
+      rootMargin: '-10px 0px 0px 0px'
+    };
+
+    const sectionOneObserver = new IntersectionObserver
+    (function(
+      entries,
+      sectionOneObserver
+    ){
+      entries.forEach(entry => {
+        if(!entry.isIntersecting) {
+          header.classList.add('nav-scrolled');
+        }  else {
+          header.classList.remove('nav-scrolled');
+        }
+      });
+    },
+    sectionOneOptions);
+
+    sectionOneObserver.observe(sectionOne);
+
+    
+
+    </script>
+
+  <div class='header-container'>
+    <div class='headerrez'>
+      <div class='subscribe'>Subscribe &#9662;</div>
+      <div class='logo'> </div>
+      <div class='social'> Social media</div>
+    </div>
+    <section>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"></div> 
+
+        </div>   
+      </div>
+    </section>  
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true, 
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
+
+  </div>
+</div>
+
+<!--thie the part i show my catalog 000000-->
+
+<div class="main-section">
+  <div class="top-text"><h1>Collections</h1></div>
+  <div class="top">
+    <div class="innerpart">
+      <div class="hidden">
+        <a href="#" class="block-price">
+          <div class="block hidden"></div>
+          <div class="price"><p>Naidoo x kokzv Sweater</p>
+            <p><strong class="cost">$180.99</strong></p></div>
+        </a> 
+        <a href="#" class="block-price">
+          <div class="block hidden"></div>
+          <div class="price"><p>Naidoo x kokzv Sweater</p>
+            <p><strong class="cost">$180.95</strong></p></div>
+        </a> 
+      </div>    
+      <div class="hidden">
+        <a href="#" class="block-price">
+          <div class="block hidden"></div>
+          <div class="price"><p>Naidoo x kokzv Sweater</p>
+            <p><strong class="cost">$180.99</strong></p></div>
+        </a> 
+        <a href="#" class="block-price">
+          <div class="block hidden"></div>
+          <div class="price"><p>Naidoo x kokzv Sweater</p>
+            <p><strong class="cost">$180.95</strong></p></div>
+        </a> 
+      </div>     
+      <div class="hidden">
+        <a href="#" class="block-price">
+          <div class="block hidden"></div>
+          <div class="price"><p>Naidoo x kokzv Sweater</p>
+            <p><strong class="cost">$180.99</strong></p></div>
+        </a> 
+        <a href="#" class="block-price">
+          <div class="block hidden"></div>
+          <div class="price"><p>Naidoo x kokzv Sweater</p>
+            <p><strong class="cost">$180.95</strong></p></div>
+        </a> 
+      </div> 
+      <div class="hidden">
+        <a href="#" class="button button-accent">view more</a>
+      </div> 
+    </div>
+    <div class="text-section">
+      <div class="main-text"></div>
+      <div class="info-text"><p>Without that flex: initial; line, the flex: 1; declaration would be inherited from the .footer-item rule, causing the width properties to be ignored. initial fixes this, and we get a flexible layout that also contains fixed-width items. When you resize the browser window, you’ll see
+         that only the middle box in the footer gets resized.</p></div>
+    </div>
+  </div>
+  </div>
+
+  <div class="middle">
+    <div class="innerpart">
+      <div class="hidden">
+          <div class="block hidden"></div>
+          <div class="block hidden"></div>
+      </div>    
+        <div class="hidden">
+            <div class="block hidden"></div>
+            <div class="block hidden"></div>
+        </div>  
+    </div>
+    <div class="text-section">
+      <div class="main-text"></div>
+      <div class="info-text"></div>
+    </div>
+  </div>
+  </div>
+
+  <div class="bottom">
+    <div class="innerpart">
+      <div class="hidden">
+          <div class="block hidden"></div>
+          <div class="block hidden"></div>
+      </div>    
+        <div class="hidden">
+            <div class="block hidden"></div>
+            <div class="block hidden"></div>
+        </div>  
+    </div>
+    <div class="text-section">
+      <div class="main-text"></div>
+      <div class="info-text"></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+   const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+   });
+
+   const hiddenElements= document.querySelectorAll('.hidden');
+   hiddenElements.forEach((el) => observer.observe(el));
+
+</script>
+
+  <div class='footer'>
+    <div class='footer-item footer-one'></div>
+    <div class='footer-item footer-two'></div>
+    <div class='footer-item footer-three'></div>
+  </div>  
+</body>
+</html>
